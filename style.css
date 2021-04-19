@@ -145,7 +145,14 @@ b {
     font-size: calc(1.5rem + 1vw);
   }
 }
-
+@media  {
+  .hero {
+    font-size: calc(1.7rem + 1vw);
+  }
+  .home-btn {
+    font-size: calc(1.3rem + 1vw);
+  }
+}
 /* keyframes */
 
 @keyframes slide-bottom {
