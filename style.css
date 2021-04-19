@@ -147,7 +147,7 @@ b {
 }
 @media (max-width: 400px) {
   .hero {
-    font-size: calc(1.7rem + 1vw);
+    font-size: calc(1.5rem + 1vw);
   }
   .home-btn {
     font-size: calc(1.3rem + 1vw);
