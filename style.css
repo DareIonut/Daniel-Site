@@ -145,7 +145,7 @@ b {
     font-size: calc(1.5rem + 1vw);
   }
 }
-@media  {
+@media (max-width: 400px) {
   .hero {
     font-size: calc(1.7rem + 1vw);
   }
