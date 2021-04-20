@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* global */
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ li {
   list-style: none;
   cursor: pointer;
 }
+/* Navbar and home section */
 .navbar {
   color: white;
 }
@@ -36,26 +38,23 @@ li {
   flex: 1 1 60rem;
 }
 
-a:hover {
-  color: rgba(221, 45, 45, 0.774);
-  border-bottom: 2px solid rgba(221, 45, 45, 0.774);
-  font-weight: bold;
-}
 .home {
   width: 100vw;
   height: 100vh;
-  background: url("./imgs/home-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  background: rgb(37, 56, 110);
 }
-/* Hero things */
+
+/* Hero section */
 .hero {
   padding-top: 3rem;
-  width: 100vw;
-  height: 80vh;
+  min-width: 100vw;
+  min-height: 80vh;
+  position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: w;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -69,16 +68,12 @@ b {
   font-size: 1.5rem;
   margin: 2.5rem;
   font-weight: bold;
-  background: rgba(221, 45, 45, 0.774);
+  background: rgba(221, 45, 45, 0.979);
   border: 2px solid white;
   padding: 1rem;
   border-radius: 50px;
 }
-.home-btn:hover {
-  color: rgba(221, 45, 45, 0.774);
-  border: 2px solid rgba(221, 45, 45, 0.774);
-  background: white;
-}
+
 .alert {
   display: none;
   font-size: 0.5rem;
@@ -91,6 +86,90 @@ b {
 }
 .double-arrow {
   animation: slide-bottom 0.8s ease-in 1s infinite both;
+}
+
+/* About me section */
+.about {
+  width: 100vw;
+  height: 80vh;
+  padding: 3rem;
+  color: rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.about-img {
+  display: flex;
+  flex: 1 1 60rem;
+}
+#succes {
+  width: 80%;
+  height: auto;
+}
+.about-inf {
+  color: rgb(37, 56, 110);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1 60rem;
+}
+.about-inf h1 {
+  font-size: 3rem;
+}
+.profession {
+  letter-spacing: 0.3rem;
+  color: rgba(221, 45, 45, 0.774);
+  padding-bottom: 1rem;
+}
+.progress-bar {
+  color: white;
+  background: rgb(224, 224, 224);
+  border-radius: 50px;
+  margin-top: 1rem;
+}
+.loading {
+  width: 35%;
+  padding: 0.4rem;
+  background: rgba(221, 45, 45, 0.774);
+  border-radius: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.load-first {
+  animation: first-loading 7s ease;
+  width: 75%;
+}
+.load-second {
+  animation: second-loading 7s ease;
+  width: 65%;
+}
+.load-third {
+  animation: third-loading 7s ease;
+  width: 45%;
+}
+/* Loading animation */
+.btn-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-container a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.9rem 2.5rem;
+  cursor: pointer;
+}
+.btn-1 {
+  background: rgb(37, 56, 110);
+  color: white;
+  border: 2px solid white;
+}
+.btn-2 {
+  background: rgb(224, 224, 224);
+  color: rgb(37, 56, 110);
+  border: 2px solid rgb(37, 56, 110);
 }
 
 /* Media Queries */
@@ -110,7 +189,7 @@ b {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: rgba(34, 33, 33, 0.965);
+    background: rgb(37, 56, 110, 0.95);
     transition: 0.4s ease;
   }
   .nav-active {
@@ -133,7 +212,7 @@ b {
   }
   .line {
     height: 3px;
-    width: 15px;
+    width: 20px;
     margin: 3px;
     border-radius: 5px;
     background: white;
@@ -145,17 +224,53 @@ b {
   .home-btn {
     font-size: calc(1.5rem + 1vw);
   }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img {
+    justify-content: center;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .hero {
     font-size: calc(1.5rem + 1vw);
   }
   .home-btn {
     font-size: calc(1.3rem + 1vw);
   }
-}
-/* keyframes */
 
+  .btn-container a {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+}
+@media (hover: hover) {
+  a:hover {
+    color: rgba(221, 45, 45, 0.774);
+    border-bottom: 2px solid rgba(221, 45, 45, 0.774);
+    font-weight: bold;
+  }
+  .home-btn:hover {
+    color: rgba(221, 45, 45, 0.959);
+    border: 2px solid rgba(221, 45, 45, 0.774);
+    background: rgb(224, 224, 224);
+  }
+  .btn-1:hover {
+    background: rgb(224, 224, 224);
+    color: rgb(37, 56, 110);
+    border: 2px solid rgb(37, 56, 110);
+  }
+
+  .btn-2:hover {
+    background: rgb(37, 56, 110);
+    color: white;
+    border: 2px solid white;
+  }
+}
+
+/* keyframes */
 @keyframes slide-bottom {
   0% {
     transform: translateY(0);
@@ -165,5 +280,32 @@ b {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes first-loading {
+  0% {
+    width: 35%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+@keyframes second-loading {
+  0% {
+    width: 35%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+@keyframes third-loading {
+  0% {
+    width: 35%;
+  }
+
+  100% {
+    width: 45%;
   }
 }
