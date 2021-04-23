@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -39,7 +41,7 @@ li {
 }
 
 .home {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -49,12 +51,12 @@ li {
 /* Hero section */
 .hero {
   padding-top: 3rem;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 80vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: w;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -65,10 +67,10 @@ b {
   color: rgba(221, 45, 45, 0.774);
 }
 .home-btn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 2.5rem;
   font-weight: bold;
-  background: rgba(221, 45, 45, 0.979);
+  background: rgba(221, 45, 45, 0.774);
   border: 2px solid white;
   padding: 1rem;
   border-radius: 50px;
@@ -86,12 +88,13 @@ b {
 }
 .double-arrow {
   animation: slide-bottom 0.8s ease-in 1s infinite both;
+  font-size: 1.5rem;
 }
 
 /* About me section */
 .about {
-  width: 100vw;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
   padding: 3rem;
   color: rgb(233, 233, 233);
   display: flex;
@@ -136,15 +139,15 @@ b {
   justify-content: space-between;
 }
 .load-first {
-  animation: first-loading 7s ease;
+  animation: first-loading 3s ease;
   width: 75%;
 }
 .load-second {
-  animation: second-loading 7s ease;
+  animation: second-loading 3s ease;
   width: 65%;
 }
 .load-third {
-  animation: third-loading 7s ease;
+  animation: third-loading 3s ease;
   width: 45%;
 }
 /* Loading animation */
@@ -218,6 +221,17 @@ b {
     background: white;
     pointer-events: none;
   }
+  .ln-anm1 {
+    transform-origin: left center;
+    animation: first-bar 0.4s forwards;
+  }
+  .ln-anm2 {
+    animation: second-bar 0.4s forwards;
+  }
+  .ln-anm3 {
+    transform-origin: left center;
+    animation: third-bar 0.4s forwards;
+  }
   .hero {
     font-size: calc(2rem + 1vw);
   }
@@ -232,14 +246,25 @@ b {
     justify-content: center;
   }
 }
+@media (max-width: 650) {
+  .about {
+    height: auto;
+  }
+}
 @media (max-width: 450px) {
   .hero {
+    position: relative;
     font-size: calc(1.5rem + 1vw);
+    height: 85%;
+    padding: 0;
   }
   .home-btn {
-    font-size: calc(1.3rem + 1vw);
+    font-size: 1rem;
   }
-
+  .double-arrow {
+    position: absolute;
+    bottom: 0;
+  }
   .btn-container a {
     font-size: 1rem;
     padding: 0.5rem;
@@ -253,7 +278,7 @@ b {
     font-weight: bold;
   }
   .home-btn:hover {
-    color: rgba(221, 45, 45, 0.959);
+    color: rgba(221, 45, 45, 0.774);
     border: 2px solid rgba(221, 45, 45, 0.774);
     background: rgb(224, 224, 224);
   }
@@ -271,12 +296,36 @@ b {
 }
 
 /* keyframes */
+@keyframes first-bar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(28deg);
+  }
+}
+@keyframes second-bar {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes third-bar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-28deg);
+  }
+}
 @keyframes slide-bottom {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(15px);
   }
   100% {
     transform: translateY(0);
