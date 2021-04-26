@@ -30,6 +30,17 @@ window.addEventListener("scroll", function () {
   firstLine.classList.remove("ln-anm1");
   secondLine.classList.remove("ln-anm2");
   thirdLine.classList.remove("ln-anm3");
+
+  //testing features
+  const scrollpos = window.scrollY; // window scroll position
+  let positionNeeded = 685; // as soon as element touches bottom with offset event starts
+
+  if (scrollpos >= positionNeeded) {
+    loadAnimation();
+    nav.classList.add("stick-top");
+  } else if (scrollpos < positionNeeded) {
+    nav.classList.remove("stick-top");
+  }
 });
 link.forEach((element) => {
   element.addEventListener("click", function () {
@@ -41,11 +52,6 @@ link.forEach((element) => {
     thirdLine.classList.remove("ln-anm3");
   });
 });
-//For mobile move
-about.addEventListener("touchmove", loadAnimation);
-//For computer move
-about.addEventListener("mouseover", loadAnimation);
-
 //functions
 
 function loadAnimation() {
