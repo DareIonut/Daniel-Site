@@ -1,5 +1,6 @@
 //Selectors
 const hamburger = document.querySelector(".hamburger-menu");
+const nav = document.querySelector("NAV");
 const navMenu = document.querySelector(".navbar-menu");
 const span = document.querySelector(".special-character");
 const homeButton = document.querySelector(".home-btn");
@@ -13,7 +14,8 @@ const thirdLine = document.querySelector(".ln-3");
 
 //Events
 hamburger.addEventListener("click", function () {
-  navMenu.classList.toggle("nav-active");
+  navMenu.classList.toggle("menu-active");
+  nav.classList.toggle("nav-active");
   span.classList.toggle("span-active");
   hamburgerAnimation();
 });
@@ -21,10 +23,18 @@ hamburger.addEventListener("click", function () {
 homeButton.addEventListener("click", function () {
   alert.style.display = "block";
 });
-
+window.addEventListener("scroll", function () {
+  navMenu.classList.remove("menu-active");
+  nav.classList.remove("nav-active");
+  span.classList.remove("span-active");
+  firstLine.classList.remove("ln-anm1");
+  secondLine.classList.remove("ln-anm2");
+  thirdLine.classList.remove("ln-anm3");
+});
 link.forEach((element) => {
   element.addEventListener("click", function () {
-    navMenu.classList.remove("nav-active");
+    navMenu.classList.remove("menu-active");
+    nav.classList.remove("nav-active");
     span.classList.remove("span-active");
     firstLine.classList.remove("ln-anm1");
     secondLine.classList.remove("ln-anm2");
