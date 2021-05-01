@@ -11,6 +11,7 @@ const about = document.querySelector(".about");
 const firstLine = document.querySelector(".ln-1");
 const secondLine = document.querySelector(".ln-2");
 const thirdLine = document.querySelector(".ln-3");
+const card = document.querySelectorAll(".card");
 
 //Events
 hamburger.addEventListener("click", function () {
@@ -50,6 +51,21 @@ link.forEach((element) => {
     firstLine.classList.remove("ln-anm1");
     secondLine.classList.remove("ln-anm2");
     thirdLine.classList.remove("ln-anm3");
+  });
+});
+
+card.forEach((card) => {
+  card.addEventListener("mouseover", function () {
+    const infoContainer = document.querySelectorAll(".card-inf");
+    infoContainer.forEach((container) => {
+      container.classList.add("container-active");
+    });
+  });
+  card.addEventListener("mouseout", function () {
+    const infoContainer = document.querySelectorAll(".card-inf");
+    infoContainer.forEach((container) => {
+      container.classList.remove("container-active");
+    });
   });
 });
 //functions
