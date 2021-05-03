@@ -280,6 +280,7 @@ li {
   /* Hero on 450px */
   .hero {
     text-align: center;
+    overflow: hidden;
   }
   .about {
     padding: 1rem;
