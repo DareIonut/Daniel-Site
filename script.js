@@ -11,7 +11,6 @@ const about = document.querySelector(".about");
 const firstLine = document.querySelector(".ln-1");
 const secondLine = document.querySelector(".ln-2");
 const thirdLine = document.querySelector(".ln-3");
-const card = document.querySelectorAll(".card");
 
 //Events
 hamburger.addEventListener("click", function () {
@@ -54,18 +53,6 @@ link.forEach((element) => {
   });
 });
 
-card.forEach((card) => {
-  card.addEventListener("mouseover", function (e) {
-    //Here we were focusing on one single card and adding it the animation
-    const target = e.target.childNodes[1];
-    target.classList.add("container-active");
-  });
-  card.addEventListener("mouseout", function (e) {
-    //Here we were focusing on one single card and removing it the animation
-    const target = e.target.childNodes[1];
-    target.classList.remove("container-active");
-  });
-});
 //functions
 
 function loadAnimation() {
