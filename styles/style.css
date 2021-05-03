@@ -215,7 +215,7 @@ li {
     z-index: 3;
     position: absolute;
     top: 5.47rem;
-    left: 100%;
+    right: 100%;
     background: var(--menu-color);
     display: flex;
     flex-direction: column;
@@ -224,7 +224,7 @@ li {
   }
   .menu-active {
     transition: 0.4s ease;
-    left: 0%;
+    right: 0%;
   }
   .nav-active {
     background: var(--menu-color);
