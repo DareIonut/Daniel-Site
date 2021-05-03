@@ -59,6 +59,9 @@
   cursor: pointer;
   animation: card-animation 0.4s forwards;
 }
+.container-out {
+  animation: card-out 0.4 forwards;
+}
 .card-inf h2 {
   font-size: var(--text);
 }
@@ -94,5 +97,14 @@
 
   100% {
     bottom: 0rem;
+  }
+}
+@keyframes card-out {
+  0% {
+    bottom: 0rem;
+  }
+
+  100% {
+    bottom: -50rem;
   }
 }

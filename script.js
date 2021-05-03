@@ -55,17 +55,15 @@ link.forEach((element) => {
 });
 
 card.forEach((card) => {
-  card.addEventListener("mouseover", function () {
-    const infoContainer = document.querySelectorAll(".card-inf");
-    infoContainer.forEach((container) => {
-      container.classList.add("container-active");
-    });
+  card.addEventListener("mouseover", function (e) {
+    //Here we were focusing on one single card and adding it the animation
+    const target = e.target.childNodes[1];
+    target.classList.add("container-active");
   });
-  card.addEventListener("mouseout", function () {
-    const infoContainer = document.querySelectorAll(".card-inf");
-    infoContainer.forEach((container) => {
-      container.classList.remove("container-active");
-    });
+  card.addEventListener("mouseout", function (e) {
+    //Here we were focusing on one single card and removing it the animation
+    const target = e.target.childNodes[1];
+    target.classList.remove("container-active");
   });
 });
 //functions
