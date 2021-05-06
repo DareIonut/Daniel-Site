@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/portofolio.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -45,7 +46,7 @@
           <h1>Hello</h1>
           <span>Here is Dare Ionut Daniel</span>
           <span>I'm a <b>Web Developer</b></span>
-          <a href="#home" class="home-btn">Read more</a>
+          <a href="#about" class="home-btn">Read more</a>
           <i class="fas fa-angle-double-down double-arrow"></i>
         </div>
       </section>
@@ -91,13 +92,13 @@
               download="DareIonutDanielCV"
               >Download CV</a
             >
-            <a class="btn-2">Contact</a>
+            <a class="btn-2" href="#contact">Contact</a>
           </div>
         </div>
       </section>
       <!-- Portofolio -->
       <section class="portofolio" id="portofolio">
-        <h1>Portofolio.</h1>
+        <h1 class="title">Portofolio.</h1>
         <div class="cards-container">
           <div class="card">
             <img
@@ -184,6 +185,49 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1 class="title">Contact me.</h1>
+        <div class="contact-icns">
+          <div class="icns-container flex">
+            <div class="round"><i class="fas fa-envelope"></i></div>
+            <span class="bold">Email</span>
+            <span class="small-text">dareionutdaniel@yahoo.com</span>
+          </div>
+          <div class="icns-container flex">
+            <div class="round"><i class="fas fa-phone-alt"></i></div>
+            <span class="bold">Phone</span>
+            <span class="small-text">+4 0757 614 510</span>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/mgerorel" method="POST">
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Name"
+            class="one margin"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email"
+            class="two margin"
+            required
+          />
+
+          <textarea
+            name="Message"
+            placeholder="Message"
+            id="message"
+            rows="10"
+            class="three margin"
+            required
+          ></textarea>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
       </section>
     </main>
     <script

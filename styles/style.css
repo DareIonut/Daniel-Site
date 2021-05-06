@@ -17,6 +17,7 @@ html {
   --font-special: rgba(221, 45, 45, 0.774);
   --background-color: #25386e;
   --menu-color: rgb(37, 56, 110, 0.95);
+  --background-second: rgb(224, 224, 224);
   --gray-text: #525252;
   scroll-behavior: smooth;
 }
@@ -36,7 +37,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 2.5rem;
+  padding: 1rem;
   display: flex;
   color: white;
 }
@@ -214,7 +215,7 @@ li {
     margin: 0;
     z-index: 3;
     position: absolute;
-    top: 5.47rem;
+    top: 6rem;
     right: 100%;
     background: var(--menu-color);
     display: flex;
@@ -291,7 +292,6 @@ li {
 @media (hover: hover) {
   a:hover {
     color: rgba(221, 45, 45, 0.774);
-    border-bottom: 2px solid rgba(221, 45, 45, 0.774);
     font-weight: bold;
   }
   .home-btn:hover {

@@ -1,18 +1,21 @@
 /* The portofolio section style */
+
+/* Importing side */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Work+Sans:wght@800&display=swap");
 @import "./style.css";
 
+/* Portofolio area */
 .portofolio {
   width: 100%;
   height: max-content;
   position: relative;
   padding: 3rem;
   display: flex;
-  background: rgb(224, 224, 224);
+  background: var(--background-second);
   flex-direction: column;
   align-items: center;
 }
-.portofolio h1 {
+.title {
   font-size: 3rem;
   font-family: "Work Sans", sans-serif;
   border-bottom: 3px dotted rgba(56, 56, 56, 0.945);

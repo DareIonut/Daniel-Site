@@ -1,0 +1,94 @@
+/* The contact section style */
+
+/* Importing side */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Work+Sans:wght@800&display=swap");
+@import "./style.css";
+
+/* Contact me area */
+
+.contact {
+  width: 100%;
+  height: max-content;
+  background: rgb(246, 246, 246);
+  position: relative;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icons style */
+
+.contact-icns {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: var(--text);
+  flex-wrap: wrap;
+}
+.icns-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+.flex {
+  flex: 0 0 60rem;
+}
+.round {
+  width: 80px;
+  height: 80px;
+  background-color: var(--background-second);
+  font-size: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bold {
+  font-weight: bolder;
+}
+.small-text {
+  font-size: var(--cool);
+}
+
+/* Form */
+form {
+  width: 70%;
+  height: max-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    "one two"
+    "three three";
+}
+form input,
+textarea {
+  border: none;
+  background: var(--background-second);
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.submit-btn {
+  width: 10rem;
+  padding: 1rem;
+
+  border-radius: 10px;
+}
