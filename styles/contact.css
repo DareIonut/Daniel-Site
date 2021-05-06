@@ -122,18 +122,36 @@ textarea {
 /* Responsive media */
 
 @media screen and (max-width: 800px) {
-  form {
-    width: 100%;
-  }
-  .flex {
-    flex: 0 0 30rem;
+  .contact {
+    padding: 2rem;
   }
 }
 @media screen and (max-width: 450px) {
-  form {
-    width: 100%;
+  .contact {
+    padding: 3rem 0.5rem 0.5rem 0.5rem;
+  }
+  .round {
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-second);
+    font-size: 2rem;
   }
   .flex {
     flex: 0 0 20rem;
+  }
+  form {
+    width: 90%;
+  }
+  form input,
+  textarea {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .margin {
+    margin: 0.5rem;
   }
 }
