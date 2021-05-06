@@ -101,6 +101,13 @@ li {
   font-size: var(--header3);
   overflow: hidden;
 }
+.me {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--font-special);
+  cursor: pointer;
+}
 .home-btn {
   margin: 2.5rem;
   padding: 1rem;
