@@ -16,7 +16,7 @@ html {
   --big: calc(6rem + 1vw);
   --font-special: rgba(221, 45, 45, 0.774);
   --background-color: #25386e;
-  --menu-color: rgb(37, 56, 110, 0.95);
+  --menu-color: rgba(27, 28, 29, 0.95);
   --background-second: rgb(224, 224, 224);
   --gray-text: #525252;
   scroll-behavior: smooth;
@@ -135,7 +135,7 @@ li {
   height: 100%;
 }
 .about-inf {
-  color: rgb(37, 56, 110);
+  color: var(--menu-color);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -160,7 +160,7 @@ li {
 .loading {
   width: 35%;
   padding: 0.4rem;
-  background: var(--font-special);
+  background: var(--menu-color);
   border-radius: inherit;
   display: flex;
   justify-content: space-between;
@@ -192,14 +192,14 @@ li {
   cursor: pointer;
 }
 .btn-1 {
-  background: rgb(37, 56, 110);
+  background: var(--menu-color);
   color: white;
   border: 2px solid white;
 }
 .btn-2 {
   background: rgb(224, 224, 224);
-  color: rgb(37, 56, 110);
-  border: 2px solid rgb(37, 56, 110);
+  color: var(--menu-color);
+  border: 2px solid var(--menu-color);
 }
 
 /* Media Queries */
@@ -301,12 +301,12 @@ li {
   }
   .btn-1:hover {
     background: rgb(224, 224, 224);
-    color: rgb(37, 56, 110);
-    border: 2px solid rgb(37, 56, 110);
+    color: var(--menu-color);
+    border: 2px solid var(--menu-color);
   }
 
   .btn-2:hover {
-    background: rgb(37, 56, 110);
+    background: var(--menu-color);
     color: white;
     border: 2px solid white;
   }
