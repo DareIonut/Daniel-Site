@@ -20,10 +20,6 @@ hamburger.addEventListener("click", function () {
   span.classList.toggle("span-active");
   hamburgerAnimation();
 });
-
-homeButton.addEventListener("click", function () {
-  alert.style.display = "block";
-});
 window.addEventListener("scroll", function () {
   navMenu.classList.remove("menu-active");
   nav.classList.remove("nav-active");
