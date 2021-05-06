@@ -95,7 +95,7 @@ textarea {
 }
 
 .submit-btn {
-  width: 15rem;
+  width: 10rem;
   padding: 0.5rem;
   margin-top: 2rem;
   border-radius: 25px;
@@ -103,6 +103,7 @@ textarea {
   background: var(--menu-color);
   color: white;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 /* Hover area */
@@ -124,9 +125,15 @@ textarea {
   form {
     width: 100%;
   }
+  .flex {
+    flex: 0 0 30rem;
+  }
 }
 @media screen and (max-width: 450px) {
   form {
     width: 100%;
+  }
+  .flex {
+    flex: 0 0 20rem;
   }
 }
