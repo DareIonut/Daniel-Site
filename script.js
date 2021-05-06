@@ -11,6 +11,7 @@ const about = document.querySelector(".about");
 const firstLine = document.querySelector(".ln-1");
 const secondLine = document.querySelector(".ln-2");
 const thirdLine = document.querySelector(".ln-3");
+const contactLogo = document.querySelectorAll(".round");
 
 //Events
 hamburger.addEventListener("click", function () {
@@ -31,7 +32,6 @@ window.addEventListener("scroll", function () {
   secondLine.classList.remove("ln-anm2");
   thirdLine.classList.remove("ln-anm3");
 
-  //testing features
   const scrollpos = window.scrollY; // window scroll position
   let positionNeeded = 685; // as soon as element touches bottom with offset event starts
 
@@ -52,7 +52,16 @@ link.forEach((element) => {
     thirdLine.classList.remove("ln-anm3");
   });
 });
-
+contactLogo.forEach((element) => {
+  element.addEventListener("click", function (e) {
+    const targetElement = e.target;
+    if (targetElement.classList.contains("envelope")) {
+      console.log("I am the envelope");
+    } else if (targetElement.classList.contains("phone")) {
+      console.log("I am the phone");
+    }
+  });
+});
 //functions
 
 function loadAnimation() {
