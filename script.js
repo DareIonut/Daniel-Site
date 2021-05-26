@@ -38,6 +38,7 @@ window.addEventListener("scroll", function () {
     nav.classList.remove("stick-top");
   }
 });
+
 link.forEach((element) => {
   element.addEventListener("click", function () {
     navMenu.classList.remove("menu-active");
@@ -48,6 +49,7 @@ link.forEach((element) => {
     thirdLine.classList.remove("ln-anm3");
   });
 });
+
 contactLogo.forEach((element) => {
   element.addEventListener("click", function (e) {
     const targetElement = e.target;
@@ -58,8 +60,8 @@ contactLogo.forEach((element) => {
     }
   });
 });
-//functions
 
+//Functions
 function loadAnimation() {
   const firstLoad = document.querySelector(".load-1");
   const secondLoad = document.querySelector(".load-2");
