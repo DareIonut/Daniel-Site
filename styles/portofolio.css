@@ -40,7 +40,6 @@
   border: 1px solid black;
   border: none;
   overflow: hidden;
-  cursor: pointer;
 }
 .card-imgs {
   width: 100%;
@@ -79,6 +78,9 @@
 }
 .tech-container .b {
   background: rgb(58, 209, 91);
+}
+.sass {
+  background: rgb(197, 58, 209);
 }
 .tech-container .c {
   background: rgb(43, 51, 158);

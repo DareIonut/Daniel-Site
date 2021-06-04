@@ -70,7 +70,7 @@ li {
   flex: 1 1 60rem;
 }
 .stick-top {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
   position: fixed;
   background: var(--menu-color);
 }
@@ -241,17 +241,17 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
   }
   .menu-active {
-    transition: 0.4s ease;
+    transition: 0.4s ease-in-out;
     right: 0%;
   }
   .nav-active {
     background: var(--menu-color);
   }
   .span-active {
-    transition: 0.4s ease;
+    transition: 0.4s ease-in-out;
     color: var(--background-color);
   }
   .hamburger-menu {
