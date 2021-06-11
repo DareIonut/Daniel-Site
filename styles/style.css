@@ -309,6 +309,9 @@ li {
   #name {
     font-size: 2.7rem;
   }
+  .about-img {
+    flex: none;
+  }
 }
 
 /* Hovering things */
