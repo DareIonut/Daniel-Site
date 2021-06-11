@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1B1C1D" />
+    <link rel="stylesheet" href="./styles/preloader.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/portofolio.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
@@ -15,10 +16,19 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <script src="preloader-js/vendor/modernizr-2.6.2.min.js"></script>
     <link rel="shortcut icon" href="./imgs/code-solid.svg" />
     <title>Dare Ionut Daniel</title>
   </head>
   <body>
+    <!--Preload effect-->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
     <!-- Main Section -->
     <nav>
       <div class="navbar-logo">
@@ -70,13 +80,12 @@
           <h1>About Me.</h1>
           <span class="profession">Student and Front-End Developer</span>
           <p class="info">
-            I am Dare Ionut Daniel and I enjoy doing things with HTML, CSS and
-            JavaScript. My journey as a Front-End developer has started eight
-            months ago when I bought a JavaScript course and after finishing it
-            I realize that Web Developement is what I want to do for a living
-            and took action in this way. I worked at some personal projects,
-            like this webpage, and if you are interested what else I built,
-            check out the section bellow. I hope you'll contact me.
+            I am Dare Ionut Daniel. I enjoy doing things with HTML, CSS, and
+            JavaScript. My journey as a Front-End developer began eight months
+            ago when I started a JavaScript course and, after finishing it, I
+            realized that Web Development is what I want to do for a living. I
+            worked on some personal projects and if you are interested in what I
+            built, check out the section below. I hope you'll contact me.
           </p>
           <div class="progress-bar">
             <div class="loading load-1">
@@ -92,12 +101,7 @@
             <div class="loading load-3"><span>Git</span><span>45%</span></div>
           </div>
           <div class="btn-container">
-            <a
-              class="btn-1"
-              href="./documents/DareIonutDaniel-Resume.pdf"
-              download="DareIonutDanielCV"
-              >Download CV</a
-            >
+            <a class="btn-1" href="#portofolio">Projects</a>
             <a class="btn-2" href="#contact">Contact</a>
           </div>
         </div>
@@ -181,7 +185,7 @@
               <p>
                 Beatmaker is a project that was made during a course. I choose
                 to post it because for me it was a great step in understanding
-                OOP concepts in JavaScript.
+                OOP.
               </p>
               <div class="btn-container">
                 <div
@@ -285,6 +289,14 @@
       </section>
     </main>
     <footer><span>Copy Right © By Daniel All Rights Reserved</span></footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="preloader-js/vendor/jquery-1.9.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="preloader-js/main.js"></script>
     <script
       data-ad-client="ca-pub-6269256714877450"
       async

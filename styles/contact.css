@@ -116,6 +116,7 @@ textarea {
   .round:hover {
     transition: 0.5s ease;
     background: var(--menu-color);
+    color: var(--background-second);
   }
   .submit-btn:hover {
     background: white;
