@@ -187,15 +187,15 @@ li {
 
 .load-first {
   animation: first-loading 3s ease;
-  width: 75%;
+  width: 70%;
 }
 .load-second {
   animation: second-loading 3s ease;
-  width: 65%;
+  width: 60%;
 }
 .load-third {
   animation: third-loading 3s ease;
-  width: 45%;
+  width: 40%;
 }
 /* Loading animation */
 .btn-container {
